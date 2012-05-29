@@ -53,9 +53,9 @@ var Game = function(){
 
 
 		
-		Util.loadAudio( function(){	
+		Util.loadImg( function(){	
 			
-			Util.loadImg( function(){
+			Util.loadAudio( function(){
 	
 				gameStart();
 			
