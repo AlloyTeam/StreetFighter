@@ -53,9 +53,9 @@ var Game = function(){
 
 
 		
-		Util.loadAudio( function(){	
+		Util.loadImg( function(){	
 			
-			Util.loadImg( function(){
+			Util.loadAudio( function(){
 	
 				gameStart();
 			
@@ -388,16 +388,22 @@ Game.reload = function(){
 	player2.bloodBar.reload();
 	setTimeout( function(){
 		player1.play( 'force_wait', 'force' );
-		player1.animate.moveto( 280, 240 );
-		player1.keyManage.start();
-		player1.direction = 1;
-		player2.animate.moveto( 480, 240 );
+		setTimeout( function(){
+		 player1.animate.moveto( 280, 240 );
+		 player1.keyManage.start();
+		 player1.direction = 1;
+		}, 30 )
+
 		player2.play( 'force_wait', 'force' );
-		player2.keyManage.start();
-		player2.direction = -1;
-		if ( mode === 1 ){
-			player2.ai.start();
-		}
+		setTimeout( function(){
+		 player2.animate.moveto( 480, 240 );
+		 player2.keyManage.start();
+		 player2.direction = -1;
+		 if ( mode === 1 ){
+		 	player2.ai.start();
+		 }
+		}, 30 )
+		
 	}, 1000 )
 
 

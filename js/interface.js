@@ -695,6 +695,8 @@ var Interfaces = {
 			}
 			
 			var stop = function(){
+			    _map = {};
+				keyQueue.clean();
 				lock = true;
 			}
 			

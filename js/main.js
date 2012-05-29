@@ -129,10 +129,10 @@
 
 			play: function( state, force ){
 			
-				if ( this.statusManage.isCrouch() && state === 'wait' ){  //蹲下的状态站起来.	
+				if ( this.statusManage.isCrouch() && ( state === 'wait' || state === 'force_wait' ) ){  //蹲下的状态站起来.	
 					return this.play( 'stand_up', true );
 				}
-				
+
 				if ( this.jump_combo( state ) && state !== 'force_wait' ) return;  //空中组合技
 			
 
