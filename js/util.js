@@ -81,6 +81,8 @@ var Util = {
 		}
 	},
 	
+	audioObj: {},
+	
 	loadAudio: function( callback ){
 		var root = 'sound/', count = this.audios.length, num = 0;
 		for ( var i = 0, c; c = this.audios[ i++ ]; ){
@@ -88,6 +90,7 @@ var Util = {
 			var audio = new Audio();
 			audio.addEventListener( "canplaythrough", function () {
 				num += 1;
+				Util.audioObj[ c ] = root + c;
 				if ( count === num ){
 					callback && callback();
 				}
