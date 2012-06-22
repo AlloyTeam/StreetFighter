@@ -1,3 +1,8 @@
+StreetFighter 街头霸王
+======================
+'90年代的感觉
+By [AlloyTeam](http://www.AlloyTeam.com/)
+
 主机:
   
    移动: W: 上, D: 前, A: 后, S：下 
