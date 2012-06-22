@@ -1,6 +1,7 @@
 StreetFighter 街头霸王
 ======================
 '90年代的感觉
+
 By [AlloyTeam](http://www.AlloyTeam.com/)
 
 主机:
@@ -21,7 +22,7 @@ By [AlloyTeam](http://www.AlloyTeam.com/)
 
 
 
-图片素材来自互联网, 原作者Random. 游戏仅供娱乐, 版权归CAPCOM公司所有.
+图片素材来自互联网, 原作者Random. 游戏仅供学习研究和娱乐, 版权归CAPCOM公司所有.
    
    
    
