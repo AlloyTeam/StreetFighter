@@ -58,7 +58,7 @@ var Game = function(){
 
 		document.body.style.position = 'relative'
 		document.body.style.left = ( document.body.offsetWidth  - 900 ) / 2 + 'px'
-		document.body.style.top = '20px'
+		document.body.style.top = '0px'
 		document.body.style.overflow = 'hidden';
 		document.body.style.backgroundColor = '#A0AAB2';
 
