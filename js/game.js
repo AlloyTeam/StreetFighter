@@ -13,6 +13,10 @@ var Game = function(){
 		
 		loading.src = 'images/g/loading.jpg';
 
+
+
+		var wrap = document.body.appendChild( document.createElement( "div" ) )
+
 		document.body.appendChild( loading );
 		
 		div = document.body.appendChild( document.createElement( 'div' ) );
@@ -52,13 +56,31 @@ var Game = function(){
 	
 
 
+		document.body.style.position = 'relative'
+		document.body.style.left = ( document.body.offsetWidth  - 900 ) / 2 + 'px'
+		document.body.style.top = '20px'
+		document.body.style.overflow = 'hidden';
+		document.body.style.backgroundColor = '#A0AAB2';
+
+
 		
 		Util.loadImg( function(){	
 			
 			Util.loadAudio( function(){
-	
-				gameStart();
 			
+				gameStart();
+
+
+				var div = document.createElement( 'div' );
+				div.style.width = '720px';
+				div.style.height = '32px';
+				div.style.top = '550px';
+				div.style.left = '96px';
+				div.style.position = 'absolute';
+				div.style.zIndex = 9999;
+				div.innerHTML = '作者blog: <a href="http://www.alloyteam.com/author/svenzeng/" target="_blank">http://www.alloyteam.com/author/svenzeng/</a>'
+				document.body.appendChild( div );
+
 	
 			})
 		

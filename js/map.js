@@ -84,6 +84,7 @@ var Map = function(){
 		bg.style.width = '910px';
 		bg.style.height = '490px';
 		bg.style.overflow = 'hidden';
+		bg.style.border = '10px ridge #EEE';
 
 		ft1.style.position = 'absolute';
 		ft1.width = 1400;
